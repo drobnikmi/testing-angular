@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 
 @Injectable()
-export class DogsService {
+export class UsersService {
 
   constructor(private HttpClient) { }
 

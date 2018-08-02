@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { DogModel } from './dog.model';
+
 import { Observable } from '../../../node_modules/rxjs/Observable';
+import { UserModel } from './models/user.model';
 
 @Injectable()
-export class DogService {
+export class UserService {
 
   constructor(private http: HttpClient) {}
 
-  getAll(): Observable<DogModel> {
-    return this.http.get<DogModel>('https://dog.ceo/api/breeds/list/all');
+  getAll(): Observable<UserModel[]> {
+    return this.http.get<UserModel[]>('https://jsonplaceholder.typicode.com/users');
   }
 }

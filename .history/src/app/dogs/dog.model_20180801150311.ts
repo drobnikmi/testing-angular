@@ -1,3 +1,3 @@
-export interface DogModel {
+export interface UserModel {
     
 } 

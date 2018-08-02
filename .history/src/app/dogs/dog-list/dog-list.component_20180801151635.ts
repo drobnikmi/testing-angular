@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { DogService } from '../dog.service';
-import { DogModel } from '../dog.model';
+import { UserService } from '../user.service';
+import { UserModel } from '../user.model';
 
 
 @Component({
-  selector: 'app-dog-list',
-  templateUrl: './dog-list.component.html',
-  styleUrls: ['./dog-list.component.scss']
+  selector: 'app-user-list',
+  templateUrl: './user-list.component.html',
+  styleUrls: ['./user-list.component.scss']
 })
-export class DogListComponent implements OnInit {
-  private allDogs: DogModel;
-  constructor(private dogService: DogService) {}
+export class UserListComponent implements OnInit {
+  private allUsers: UserModel;
+  constructor(private userService: UserService) {}
 
   ngOnInit() {
-    this.allDogs = this.dogService.getAll().subscribe(){
+    this.allUsers = this.userService.getAll().subscribe(){
 
     }
   }

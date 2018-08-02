@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { DogModel } from './dog.model';
+import { UserModel } from './user.model';
 import { Observable } from '../../../node_modules/rxjs/Observable';
 
 @Injectable()
-export class DogService {
+export class UserService {
 
   constructor(private http: HttpClient) {}
 
   getAll() {
-    return this.http.get<DogModel>('https://dog.ceo/api/breeds/list/all');
+    return this.http.get<UserModel>('https://user.ceo/api/breeds/list/all');
   }
 }

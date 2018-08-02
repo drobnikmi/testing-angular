@@ -2,11 +2,11 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable()
-export class DogsService {
+export class UsersService {
 
   constructor(private http: HttpClient) {}
 
-  getAllDogs() {
-    this.http.get('https://dog.ceo/api/breeds/list/all');
+  getAllUsers() {
+    this.http.get('https://user.ceo/api/breeds/list/all');
   }
 }

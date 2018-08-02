@@ -1,4 +1,4 @@
-export interface DogModel {
+export interface UserModel {
     status: String,
 
 } 

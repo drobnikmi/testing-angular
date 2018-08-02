@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { DogsService } from '../dogs.service';
+import { UsersService } from '../users.service';
 
 
 @Component({
-  selector: 'app-dogs-list',
-  templateUrl: './dogs-list.component.html',
-  styleUrls: ['./dogs-list.component.scss']
+  selector: 'app-users-list',
+  templateUrl: './users-list.component.html',
+  styleUrls: ['./users-list.component.scss']
 })
-export class DogsListComponent implements OnInit {
+export class UsersListComponent implements OnInit {
 
-  constructor(private dogService: DogsService) {}
+  constructor(private userService: UsersService) {}
 
   ngOnInit() {
   }

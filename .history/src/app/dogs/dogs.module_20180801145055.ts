@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DogListComponent } from './dog-list/dog-list.component';
-import { DogService } from './dog.service';
+import { UserListComponent } from './user-list/user-list.component';
+import { UserService } from './user.service';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [DogListComponent],
-  providers: [DogService]
+  declarations: [UserListComponent],
+  providers: [UserService]
 })
-export class DogsModule { }
+export class UsersModule { }

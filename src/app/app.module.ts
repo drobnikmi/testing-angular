@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { DogsModule } from './dogs/dogs.module';
+import { UsersModule } from './users/users.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -10,7 +10,7 @@ import { DogsModule } from './dogs/dogs.module';
   imports: [
     BrowserModule,
     HttpClientModule,
-    DogsModule
+    UsersModule
   ],
   providers: [],
   bootstrap: [AppComponent]
