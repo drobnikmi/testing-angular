@@ -4,7 +4,7 @@
       <div class="col">{{ user.name }}</div>
       <div class="col">{{ user.email }}</div>
       <div class="col">{{ user.phone }}</div>
-      <div class="col text-right"><button class="btn btn-primary">Edit</button></div>
+      <div class="col text-right"><button class="btn btn-primary" (click)="openDialog(user);">Edit</button></div>
     </div>
   </div>
 </div>
