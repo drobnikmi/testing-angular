@@ -1,10 +1,10 @@
 <div *ngIf="(allUsers$ | async) as users">
   <div *ngFor="let user of users">
-    <div class="row mb-1">
+    <div class="row align-items-center alert alert-success">
       <div class="col">{{ user.name }}</div>
       <div class="col">{{ user.email }}</div>
       <div class="col">{{ user.phone }}</div>
-      <div class="col"><div class="btn btn-primary">Edit</div></div>
+      <div class="col text-right"><button class="btn btn-primary">Edit</button></div>
     </div>
   </div>
 </div>
